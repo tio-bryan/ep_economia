@@ -3,7 +3,7 @@
 
 #!/usr/bin/python
 
-import Tkinter as tk # Lib p/ criar janelas
+from Tkinter import * # Lib p/ criar janelas
 import tkMessageBox
 import matplotlib # Lib p/ plotar graficos
 
@@ -13,16 +13,13 @@ def microeconomia():
 def macroeconomia():
     tkMessageBox.showinfo('Macroeconomia', 'Macroeconomia')
 
-root = tk.Tk() # Cria menu principal
+root = Tk() # Cria menu principal
 root.title('EP de Estatística')
+root.geometry('250x250')
 
 # Cria botões
-microeconomia = tk.Button(root, text='Microeconomia', command=microeconomia)
-macroeconomia = tk.Button(root, text='Macroeconomia', command=macroeconomia)
-quit = tk.Button(root, text='Sair', fg='red', command=quit)
-
-microeconomia.pack()
-macroeconomia.pack()
-quit.pack()
+microeconomia = Button(root, text='Microeconomia', command=microeconomia).pack()
+macroeconomia = Button(root, text='Macroeconomia', command=macroeconomia).pack()
+Button(root, text='Sair', fg='red', command=quit).pack()
 
 root.mainloop()
