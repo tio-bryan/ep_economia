@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#!/usr/bin/python
+# Ativa o virtualenv para não precisar instalar os packages
+activate_this = "/home/tio-bryan/ep_economia/bin/activate_this.py"
+execfile(activate_this, dict(__file__=activate_this))
 
 from Tkinter import * # Lib p/ criar janelas
 import tkMessageBox
