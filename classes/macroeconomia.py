@@ -1,5 +1,4 @@
 import tkMessageBox
 
-class macroeconomia:
-    def macroeconomia():
-        tkMessageBox.showinfo('Macroeconomia', 'Macroeconomia')
+def macroeconomia():
+    tkMessageBox.showinfo('Macroeconomia', 'Macroeconomia')
